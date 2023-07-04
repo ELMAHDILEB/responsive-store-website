@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FILE CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONT FILE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- AWESOME CDN FILE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>RESPONSIVE WEBSITE STORE</title>
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo" />
+        </div>
+        <nav>
+            <div class="topNav">
+                <button onclick="closeNav()"><i class="btn-x fa-solid fa-xmark"></i></button>
+                <div class="select">
+                    <select name="format" id="format">
+                        <option selected>All Gategories</option>
+                        <option value="product1">product1</option>
+                        <option value="product2">product2</option>
+                        <option value="product3">product3</option>
+                        <option value="product4">product4</option>
+                    </select>
+                </div>
+                <input class="searching" type="search" placeholder="Search for items" />
+                <i class="fa-solid fa-magnifying-glass btn"></i>
+            </div>
+            <div class="bottomNav">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-fire"></i> Discounts</a></li>
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="">About &#x25BE;
+                            <ul class="dropdown">
+                                <li><a href="#">html</a></li>
+                                <li><a href="#">css</a></li>
+                                <li><a href="#">js</a></li>
+                            </ul>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#">Product &#x25BE;
+                            <ul class="dropdown">
+                                <li><a href="#">product1</a></li>
+                                <li><a href="#">product2</a></li>
+                                <li><a href="#">product3</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="login">
+            <ul>
+                <li><a href="#account"><i class="fa-solid fa-user"></i> account</a></li>
+                <li> <a href="#wishList"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+                <li class="cart"> <a href="#cart"><i class="fa-solid fa-cart-shopping"></i><span>0</span> Cart</a></li>
+            </ul>
+
+            <!-- <span>0</span> -->
+        </div>
+
+        <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+
+    </header>
+    <!-- HEADER  -->
+
+    <!-- HOME PAGE -->
+    <section class="container">
+        <div class="wrapper">
+            <div class="slide">
+                <div class="content">
+                    <h1 class="title-one">Im Own a WebSite <br><span>Now</span></h1>
+                    <a href="signup.html" class="sign-up">sign up <i class="fas fa-angle-right"></i></a>
+
+                </div>
+                <div class="pic">
+                    <img src="images/vector.svg" alt="" />
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <h1 class="title-two">Up To 70% off</h1>
+                    <p>Your Favourite <br> Brands</p>
+
+
+                </div>
+                <div class="pic">
+                    <img src="images/vector1.svg" alt="" />
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="content">
+                    <h1 class="title-three">Find your Product, <br> Order it and pay it in <br> <span> Easy Steps</span>
+                    </h1>
+                    <p>Start Your Daily Shopping with Company</p>
+                    <div class="bank">
+                        <a href="#appstore"><i class="fa-brands fa-app-store-ios"></i></a>
+                        <a href="#appstore"><i class="fa-brands fa-google-play"></i></a>
+                        <a href="#appstore"><i class="fa-brands fa-cc-visa"></i></a>
+                        <a href="#appstore"><i class="fa-brands fa-cc-mastercard"></i></a>
+                        <a href="#appstore"><i class="fa-brands fa-cc-amex"></i></a>
+                    </div>
+
+
+
+                </div>
+                <div class="pic">
+                    <img src="images/Group.svg" alt="" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- HOME PAGE -->
+
+    <!-- Featured Categories -->
+    <section class="featured">
+        <h1>Featured Categories</h1>
+        <div class="list-product">
+            <div class="product">
+                <img src="images/product1.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/product2.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/product1.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/product2.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/product1.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/product2.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/product1.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/product2.svg" alt="product1">
+
+                <div class="content-product">
+                    <h5>Product1</h5>
+                    <p>30 items</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Featured Categories -->
+
+    <!-- Best Products -->
+    <section class="best-product">
+        <h1>Best Products</h1>
+        <a href="#viewall">View All ></a>
+
+        <div class="best">
+            <div class="product-best">
+                <div class="content-pro">
+                    <h3>best Products</h3>
+                    <a class="btn" href="#">Shop Now<i class="fas fa-angle-right"></i></a>
+                </div>
+                <img src="images/bestproduct.png" alt="bestproduct">
+            </div>
+
+            <div class="product-best" style="background-color: #F3E8E8;">
+                <div class="content-pro">
+                    <h3>best Products</h3>
+                    <a class="btn" href="#">Shop Now<i class="fas fa-angle-right"></i></a>
+                </div>
+                <img src="images/bestproduct.png" alt="bestproduct">
+            </div>
+
+            <div class="product-best" style="background-color: #E6E9F2;">
+                <div class="content-pro">
+                    <h3>best Products</h3>
+                    <a class="btn" href="#">Shop Now<i class="fas fa-angle-right"></i></a>
+                </div>
+                <img src="images/bestproduct.png" alt="bestproduct">
+            </div>
+
+        </div>
+    </section>
+    <!-- Best Products -->
+
+    <!-- All Products -->
+    <section class="all-products">
+        <h1>All Products</h1>
+        <a href="#viewall" class="view-all">View All ></a>
+        <div class="products-card">
+            <div class="card">
+                <img src="images/bestproduct.png" alt="">
+                <div class="content-best">
+                    <h4>Products</h4>
+                    <h3>Name Products</h3>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1" /><label for="star1"></label>
+                        <input type="radio" name="star" id="star2" /><label for="star2"></label>
+                        <input type="radio" name="star" id="star3" /><label for="star3"></label>
+                        <input type="radio" name="star" id="star4" /><label for="star4"></label>
+                        <input type="radio" name="star" id="star5" /><label for="star5"></label>
+                    </div>
+                    <div class="price">
+                        <h2>$2.51 <del>$2.00</del></h2>
+                        <a href="" class="add-cart cart1">Add +</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/bestproduct.png" alt="">
+                <div class="content-best">
+                    <h4>Products</h4>
+                    <h3>Name Products</h3>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1" /><label for="star1"></label>
+                        <input type="radio" name="star" id="star2" /><label for="star2"></label>
+                        <input type="radio" name="star" id="star3" /><label for="star3"></label>
+                        <input type="radio" name="star" id="star4" /><label for="star4"></label>
+                        <input type="radio" name="star" id="star5" /><label for="star5"></label>
+                    </div>
+                    <div class="price">
+                        <h2>$2.51 <del>$2.00</del></h2>
+                        <a href="" class="add-cart cart2">Add +</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="images/bestproduct.png" alt="">
+                <div class="content-best">
+                    <h4>Products</h4>
+                    <h3>Name Products</h3>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1" /><label for="star1"></label>
+                        <input type="radio" name="star" id="star2" /><label for="star2"></label>
+                        <input type="radio" name="star" id="star3" /><label for="star3"></label>
+                        <input type="radio" name="star" id="star4" /><label for="star4"></label>
+                        <input type="radio" name="star" id="star5" /><label for="star5"></label>
+                    </div>
+                    <div class="price">
+                        <h2>$2.51 <del>$2.00</del></h2>
+                        <a href="" class="add-cart cart3">Add +</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="images/bestproduct.png" alt="">
+                <div class="content-best">
+                    <h4>Products</h4>
+                    <h3>Name Products</h3>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1" /><label for="star1"></label>
+                        <input type="radio" name="star" id="star2" /><label for="star2"></label>
+                        <input type="radio" name="star" id="star3" /><label for="star3"></label>
+                        <input type="radio" name="star" id="star4" /><label for="star4"></label>
+                        <input type="radio" name="star" id="star5" /><label for="star5"></label>
+                    </div>
+                    <div class="price">
+                        <h2>$2.51 <del>$2.00</del></h2>
+                        <a href="" class="add-cart cart4">Add +</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/bestproduct.png" alt="">
+                <div class="content-best">
+                    <h4>Products</h4>
+                    <h3>Name Products</h3>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1" /><label for="star1"></label>
+                        <input type="radio" name="star" id="star2" /><label for="star2"></label>
+                        <input type="radio" name="star" id="star3" /><label for="star3"></label>
+                        <input type="radio" name="star" id="star4" /><label for="star4"></label>
+                        <input type="radio" name="star" id="star5" /><label for="star5"></label>
+                    </div>
+                    <div class="price">
+                        <h2>$2.51 <del>$2.00</del></h2>
+                        <a href="" class="add-cart cart5">Add +</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/bestproduct.png" alt="">
+                <div class="content-best">
+                    <h4>Products</h4>
+                    <h3>Name Products</h3>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1" /><label for="star1"></label>
+                        <input type="radio" name="star" id="star2" /><label for="star2"></label>
+                        <input type="radio" name="star" id="star3" /><label for="star3"></label>
+                        <input type="radio" name="star" id="star4" /><label for="star4"></label>
+                        <input type="radio" name="star" id="star5" /><label for="star5"></label>
+                    </div>
+                    <div class="price">
+                        <h2>$2.51 <del>$2.00</del></h2>
+                        <a href="" class="add-cart cart6">Add +</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- All Products -->
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="topFooter">
+            <div class="address">
+                <img src="images/logo.svg" alt="logo" />
+                <div class="content-address">
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <h4>address:</h4>KSA, Jeddah
+                    </span>
+                    <span><i class="fa-solid fa-headset"></i>
+                        <h4>Call Us:</h4>+966 547459900
+                    </span>
+                    <span><i class="fa-solid fa-envelope"></i>
+                        <h4>Email:</h4>contact@nestmart.com
+                    </span>
+                    <span><i class="fa-solid fa-clock"></i>
+                        <h4>Hours:</h4>10:00 - 18:00, Mon - Sat
+                    </span>
+                </div>
+            </div>
+
+            <div class="company">
+                <h2>Company</h2>
+                <div class="links">
+                    <a href="">About us</a>
+                    <a href="">Delivery Information</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Support Center</a>
+                    <a href="">Careers</a>
+                </div>
+            </div>
+
+
+            <div class="account">
+                <h2>Account</h2>
+                <div class="links">
+                    <a href="signup.html">Sign In</a>
+                    <a href="">View Cart</a>
+                    <a href="">My Wishlist</a>
+                    <a href="">Track My Order</a>
+                    <a href="">Help Ticket</a>
+                    <a href="">Shipping Details</a>
+                    <a href="">Compare products</a>
+                </div>
+            </div>
+
+            <div class="account">
+                <h2>Account</h2>
+                <div class="links">
+                    <a href="signup.html">Sign In</a>
+                    <a href="">View Cart</a>
+                    <a href="">My Wishlist</a>
+                    <a href="">Track My Order</a>
+                    <a href="">Setting Account</a>
+                    <a href="">View All Order</a>
+                    <a href="">Collection</a>
+                </div>
+            </div>
+            <div class="payment">
+                <h2>App & Payment</h2>
+                <div class="install">
+                    <p>Install NetMart App from App Store or Google Play</p>
+                    <div class="bank">
+                        <a href="#appstore"><i class="fa-brands fa-app-store-ios"></i></a>
+                        <a href="#appstore"><i class="fa-brands fa-google-play"></i></a>
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <div class="bank">
+                        <a href="#appstore"><i class="fa-brands fa-cc-visa"></i></a>
+                        <a href="#appstore"><i class="fa-brands fa-cc-mastercard"></i></a>
+                        <a href="#appstore"><i class="fa-brands fa-cc-amex"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="bottomFooter">
+            <p>© 2023, By <span>EL MAHDI BELCADI</span></p>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION -->
+
+</body>
+<script src="main.js"></script>
+
+</html>
