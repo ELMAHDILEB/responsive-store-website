@@ -699,6 +699,8 @@ button .btn-x:hover {
 
 /* FOOTER SECTION */
 footer {
+    display:flex;
+    flex-direction:colimn;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -713,7 +715,7 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
